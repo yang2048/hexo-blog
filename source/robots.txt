@@ -1,0 +1,14 @@
+User-agent: * 
+Allow: /
+Allow: /categories/
+Allow: /tags/
+Allow: /archives/
+
+Disallow: /js/
+Disallow: /css/
+Disallow: /images/
+Disallow: /img/
+Disallow: /lib/
+
+Sitemap: https://yyovo.com/sitemap.xml
+Sitemap: https://yyovo.com/baidusitemap.xml

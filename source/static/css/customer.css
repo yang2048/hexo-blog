@@ -1,0 +1,285 @@
+/* 全局宽 */
+.layout {
+  max-width: 1400px;
+}
+@media screen and (max-width: 1500px) {
+  .layout {
+    max-width: 1400px;
+  }
+}
+
+/* 顶部导航栏 */
+#nav .site-page {
+  /* font-size: 0.8em; */
+}
+/* 顶部导航栏居中 */
+#nav .menus_items {
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 800px;
+}
+/* 友链样式 */
+#article-container .flink .flink-list > .flink-list-item:before {
+  background: rgb(0 173 255 / 10%);
+  border-radius: 10px;
+  border: 1px solid var(--text-bg-hover);
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(73, 177, 245, 0.2);
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3498db;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.4) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0.4) 75%,
+    transparent 75%,
+    transparent
+  );
+  border-radius: 2em;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #49b1f5;
+}
+
+/* a标签默认颜色 */
+/* #article-container a {
+  color: #339966;
+  text-decoration: none;
+}*/
+/* 鼠标悬停时的颜色 */
+/* #article-container a:hover {
+  color: #e58a8a;
+  text-decoration: none;
+}  */
+
+/* 公共样式 */
+#banner {
+  margin-bottom: 1rem;
+}
+#banner .pull-left{
+float: left!important;
+}
+#banner .pull-right{
+float: right!important;
+}
+#banner .clearfix:after {
+visibility: hidden;
+display: block;
+font-size: 0;
+content: " ";
+clear: both;
+height: 0;
+}
+#banner .clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+#banner .clearfix { display: block; }
+/* close commented backslash hack */
+#banner ul,li{
+margin:0;
+padding:0;
+list-style-type: none;
+}
+
+/* 鼠标样式 */
+body{font-family:MyFont!important;}
+
+body {
+  cursor: url(https://cdn.jsdelivr.net/gh/xiaopengand/blogCdn@latest/S1.cur),
+    default;
+}
+a,
+img {
+    cursor: url(https://cdn.jsdelivr.net/gh/xiaopengand/blogCdn@latest/S2.cur),
+    default;
+}
+
+/* 轮播图插件样式 */
+/* #banner .carousel-box{
+position: relative;
+width:100%;
+}
+#banner .transverse-box{
+position: relative;
+width:66.7%;
+}
+#banner .img-item{
+position: absolute;
+top:0;
+left:0;
+z-index: 0;
+}
+#banner .vertical-box{
+position: relative;
+width:33.3%;
+}
+#banner .vertical-box ul{
+overflow: hidden;
+}
+#banner .img-item{
+transition: width 1s;
+}
+#banner .img-item img{
+width:100%;
+height:100%;
+}
+#banner .vertical-box ul li{
+font-size: 0;
+}
+#banner .vertical-box ul li img{
+width:100%;
+height:100%;
+}
+#banner .left-arrow{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top:50%;
+left:0px;
+color:#fff;
+margin-top:-35px;
+font-size: 50px;
+font-weight: 200;
+text-align: center;
+line-height: 100px;
+width:50px;
+height:70px;
+background:rgba(0,0,0,0.6);
+cursor: pointer;
+z-index: 99;
+}
+#banner .right-arrow{
+display: flex;
+justify-content: center;
+align-items: center;
+position: absolute;
+top:50%;
+right:0px;
+color:#fff;
+margin-top:-35px;
+font-size: 50px;
+font-weight: 200;
+text-align: center;
+line-height: 100px;
+width:50px;
+height:70px;
+background:rgba(0,0,0,0.6);
+cursor: pointer;
+z-index: 99;
+} */
+
+/* 首页文章宫格样式 */
+#recent-posts{
+  margin-top:-1rem;  /*头部为空时抵消间隔，若有磁贴或日历请注释掉该行*/
+  align-content:flex-start;
+  display: flex;
+  flex-wrap: wrap; /*规定灵活的项目在必要的时候拆行或拆列。*/
+  justify-content: space-between; /*。*/
+}
+#recent-posts > .recent-post-item {
+  /*max-height:324px;*/  /*文章容器最大高度*/
+  margin-top: 1rem; /*最小间距*/
+  display: inline-block;
+  height:auto; /*高度自动*/
+  width:49%;/*文章容器容器宽度*/
+}
+#recent-posts > .recent-post-item .post_cover {
+  width: 100%; /*图片封面宽度*/
+  height: 200px;/*图片封面高度*/
+}
+#recent-posts > .recent-post-item .post_cover img.post_bg {
+  width: 100%;/*图片宽度*/
+  height: 100%;/*图片高度*/
+}
+
+#recent-posts > .recent-post-item >.recent-post-info > .content {
+/* display:none;*/  /*隐藏文章详情 */
+}
+#recent-posts > .recent-post-item {
+  -webkit-flex-direction: column; /*容器内部纵向排列*/
+  -ms-flex-direction: column; /*容器内部纵向排列*/
+  flex-direction: column; /*容器内部纵向排列*/
+}
+#recent-posts > .recent-post-item .left_radius {
+  border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+#recent-posts > .recent-post-item .right_radius {
+  border-radius: 8px 8px 0 0;/*圆角修改*/
+}
+.recent-post-item{
+  height:auto !important;/*容器高度自动*/
+}
+
+.recent-post-info {
+  padding: 0 40px;/*容器内部文字左右间距*/
+  margin-top: 1em;/*容器内部文字上间距*/
+  width: 100%!important;/*容器宽度*/
+}
+
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+  -webkit-line-clamp: 1;/*控制标题的行数*/
+  margin-top: 0.3rem; /*控制标题的上间距*/
+  margin-bottom: 0.3rem;/*控制标题的下间距*/
+  /*color: var(--text-highlight-color);
+  font-size: 1.2em; 控制标题的字体大小*/
+  line-height: 1.4;/*控制标题的行高*/
+}
+#recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap {
+  /* margin-bottom: 1rem;*/ /*控制标题meta信息的底部间距 */
+}
+@media screen and (max-width: 768px) {
+  #recent-posts > .recent-post-item {
+    width:100%;/*控制手机自适应*/
+  }
+}
+/* 页脚半透明 */
+#footer {
+  /* background: rgba(255,255,255,.15); */
+  color: #000;
+  backdrop-filter: saturate(100%) blur(5px);
+  background: transparent !important;
+}
+
+#footer::before {
+  background: rgba(255,255,255,.15)
+}
+
+:root {
+  /* --card-bg: #fff; */
+  --card-bg: #ffffffd0;
+}
+
+[data-theme="dark"] {
+  --card-bg: #12121288;
+  --btn-hover-color: #787878;
+  --btn-bg: #1f1f1f;
+  --btn-hover-color: #ff5858;
+  --btn-bg: #6917cc;
+  --font-color: rgba(255,255,255,0.7);
+  --hr-border: rgba(255,255,255,0.4);
+  --font-color: rgb(255, 255, 255);
+  --hr-border: rgb(161, 83, 255);
+}
