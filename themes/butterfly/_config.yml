@@ -858,7 +858,7 @@ css_prefix: true
 # 插入代码到头部 </head> 之前 和 底部 </body> 之前
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <script async src="https://umami-yang2048.vercel.app/script.js" data-website-id="eabd0d5d-e7a2-4bd1-b3aa-60d7cfcc2e24"></script>
   bottom:
     # - <script src="xxxx"></script>
 
